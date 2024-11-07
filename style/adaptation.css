@@ -707,3 +707,498 @@ footer {
     margin-left: 5%;
 }
 }
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 375px){
+
+    body {
+        background-color: #131313;
+    }
+
+    /* Бургер меню  */
+    .menu {
+        margin-left: 5%;
+        margin-top: -40%;
+    }
+
+/* основной блок (даваю отступ надписям) */
+.main_photo {
+    height: 400px;
+}
+
+
+.main_photo h1 {
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 0;
+    font-size: 7vw;
+    line-height: normal;
+}
+
+.main_photo p {
+    margin-left: 7%;
+    font-size: 4vw;
+}
+
+.buttons_block {
+    margin-left: 7%;
+}
+
+/* оранжевая кнопка  */
+.button_calculate {
+    padding-left: 25%;
+    padding-right: 25%;
+
+    font-size: 4vw;
+}
+/* прозрачная кнопка  */
+.button_submit {
+    padding-left: 34%;
+    padding-right: 34%;
+    margin-top: 5%;
+
+    font-size: 4vw;
+}
+
+/* слайдер  */
+.slaider_block {
+    height: 300px;
+}
+
+.slider-container {
+    position: relative;
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    background-color: #131313;
+}
+
+/* блок с смещенным видео  */
+.videowall-block {
+    height: 800px;
+}
+
+.movie {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.videowall-block p {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+}
+
+/* форма обратной связи  */
+.flex-container-form {
+    display: block;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+/* стили для инпутов ввода имени и номера телефона  */
+.name-form-one{
+    padding-top: 10px;
+    padding-right: 20%;
+    margin-bottom: 30%;
+
+
+}
+
+.phone-form-one {
+    border-bottom: 1px solid #8c8b8b;
+    padding-top: 10px;
+    padding-right: 20%;
+
+}
+
+.submit-info {
+    font-family: "Nunito Sans", sans-serif;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+
+    margin-top: 50%;
+    margin-left: 3%;
+}   
+
+/* чекбокс под формой  */
+.first-checkbox {
+    margin-left: 5%;
+    margin-top: -30%;
+    margin-bottom: 10%;
+
+    font-size: 3vw;
+    color: #fff;
+}
+
+.label {
+    cursor: pointer;
+}
+.checkbox{
+    display: none;
+}
+.fake{ 
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+/* card block with flex   */
+.card-box {
+    height: 1300px;
+    /* background-color: aquamarine; */
+}
+
+.title-card {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Yeseva One", serif;
+    color: #fff;
+}
+
+.ussr-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.us-photo {
+    width: 114px;
+    height: 28px;
+}
+
+.card-box {
+    height: 2000px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 2000px;
+    /* margin-top: 100px; */
+    /* background-color: #e3e3e3; */
+}
+
+.flex-container {
+    margin-top: 100px;
+    display: block;
+}
+
+.description img {
+    width: 100%;
+}
+
+/* стили для описания карточек с фотками  */
+.description {
+    margin-top: 100px;
+    display: block;
+    
+    margin-left: 4%;
+    margin-right: 2%;
+    height: 1300px;
+}
+
+.list-description {
+    margin-top: -20%;
+    margin-left: -3%;
+
+    background-color: #ffffff;
+    width: 50%;
+    height: 700px;
+
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #8c8b8b;
+
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.list-description h5 {
+    color: rgba(37, 37, 37, 0.9);
+    font-size: 20px;
+    font-family: "Yeseva One", serif;
+}
+
+
+
+
+/* блок с карточками квартир и их описаниями
+в виде отдельныых блоков под ними  */
+
+.card-box {
+    /* height: 200px; */
+    height: 1vh;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.flex-container {
+    margin-top: 100px;
+    display: grid;
+    justify-content: space-between;
+}
+
+.image-one {
+    width: 100%;
+    height: auto;
+    margin-top: -40%;
+    margin-bottom: 20%;
+} 
+
+/* стили для описания карточек с фотками  */
+
+.description {
+    margin-top: 100px;
+    display: grid;
+    margin-right: 2%;
+}
+
+.list-description {
+    margin-top: -20%;
+    margin-bottom: 60%;
+
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 80%;
+
+    font-size: 4vw;
+    font-family: "Nunito Sans", sans-serif;
+    color: #aeaeae;
+
+    border-bottom: 1px solid #2b2b2b;
+    border-left: 1px solid #2b2b2b;
+    border-right: 1px solid #2b2b2b;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    /* border-radius: 10px; */
+}
+
+.list-description h5 {
+    color: rgba(255, 253, 253, 0.9);
+    font-size: 5vw;
+    font-family: "Yeseva One", serif;
+    margin-left: 0;
+}
+
+/* форма обратной свзяи (черная) + список  */
+
+
+.black-form {
+height: 1000px;
+margin-top: 300px;
+display: flex;
+/* justify-content: space-evenly; */
+}
+
+/* список и фотография белого города  */
+
+.background-city-photo {
+display: none;
+}
+
+.second-form-obr {
+width: 170%;
+height: 600px;
+
+color: #8c8b8b;
+
+/* background-color: #131313; */
+background-color: white;
+
+border: 1px solid #131313;
+border-radius: 5px;
+}
+
+/* описание всего блока (параграф)  */
+.description-black-obr  {
+font-size: 5vw;
+font-family: "Nunito Sans", sans-serif; 
+text-align: center;
+padding-top: 10%;
+padding-bottom: 10%;
+color: #3c3c3c;
+
+font-weight: 300;
+}
+
+/* дивы, в которых находятся формы для заполнения  */
+.soon-form-obr {
+font-size: 24px;
+color: #8c8b8b;
+
+font-family: "Nunito Sans", sans-serif;
+
+font-weight: 300;
+padding-right: 10%;
+}
+
+/* имя, телефон и мэйл (параграф) */
+.parag-name {
+padding-left: 5%;
+/* margin: 0; */
+margin-bottom: -5%;
+}
+
+/* имя */
+.name-form-one-obr {
+background: transparent;
+border: none;
+border-bottom: 1px solid #8c8b8b;
+margin-bottom: 20px;
+
+font-size: 18px;
+color: #8c8b8b;
+
+font-family: "Nunito Sans", sans-serif;
+
+margin-left: 5%;
+margin-right: 5%;
+
+padding-right: 10%;
+}
+
+/* телефон */
+.phone-form-one-obr {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #8c8b8b;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    color: #8c8b8b;
+
+    font-family: "Nunito Sans", sans-serif;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    padding-right: 10%;
+}
+
+/* мэйл */
+.emale-form-one-obr {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #8c8b8b;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    color: #8c8b8b;
+
+    font-family: "Nunito Sans", sans-serif;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    padding-right: 10%;
+}
+
+/* кнопка чернйо формы  */
+.submit-info-obr {
+    font-family: "Nunito Sans", sans-serif;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 4vw;
+    color: white;
+    text-transform: uppercase;
+
+    font-weight: 300;
+
+}
+
+    /* блок с карточками, котоыре 
+    расположены на разных линиях  */
+
+.desighn-block {
+    display: none;
+}
+
+.reviews {
+    display: none;
+}
+
+/* Карта  */
+.map {
+    /* background: url(/image/image\ 7.2.jpg) no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    margin-top: -80%;
+}
+
+.text-map {
+    /* color: #000000; */
+    color: #E3B873;
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-family: "Yeseva One", serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+iframe {
+    width: 80vw;
+    height: 69vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    -webkit-box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 4px rgba(34, 60, 80, 0.2);
+}
+
+/* footer  */
+
+footer {
+    display: none;
+}
+
+}
